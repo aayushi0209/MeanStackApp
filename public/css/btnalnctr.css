@@ -1,0 +1,20 @@
+
+.btnalnctr{
+	text-align:center
+}
+body{
+	/* background-color: ; */
+	font-style: normal;
+	font-size: medium;
+	color:black;
+	
+}
+
+table{
+	border-style: double;
+	border-width: 2px;
+}
+td{
+	padding:5px;
+	margin:3px;
+}

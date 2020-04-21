@@ -1,0 +1,26 @@
+<!--//spamean/views/add.html-->
+<center>
+	<div class ="container  text-center my-5">
+		<h1>REGISTER DATA</h1>
+        <hr class="w-25">
+		<form method="post" ng-submit="send_data()" class=" text-center my-3 ml-5">
+			<div class="form-group row text-center">
+
+			<label class="sr-only" for="inlineFormInputName2">FIRST NAME</label>
+		  <input type="text" class="form-control mb-2 mr-sm-2 m-3" id="first"  name="firstname" placeholder="Enter first Name" ng-model="form_data.first_name" required pattern="^[a-zA-Z][a-z]{2,10}$">
+
+
+			<label class="sr-only" for="inlineFormInputName2">LAST NAME</label>
+			<input type="text" class="form-control mb-2 mr-sm-2 m-3" id="last"  name="lastname" placeholder="Enter last Name" ng-model="form_data.last_name" required pattern="^[a-zA-Z][a-z]{2,10}$">
+
+		
+			<label class="sr-only" for="inlineFormInputName2">PHONE NUMBER</label>
+			 <input type="text" class="form-control mb-2 mr-sm-2 m-3" name="phone" id="phone" placeholder="Enter your phone no" ng-model="form_data.phone"required pattern="^[6-9][0-9]{9}$" >
+			</div>
+			<div class="container text-center"></div>
+			 <button type="submit" class="btn btn-secondary p-3 text-center">SUBMIT</button>
+			</div>
+	
+		</form>
+	</div>
+</center>

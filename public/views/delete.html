@@ -1,0 +1,43 @@
+<!--//spamean/views/delete.html-->
+<!DOCTYPE html>
+    <html>
+        <body>
+            <center>
+                <div class ="container  text-center my-5">
+                    <h1>DELETE DATA</h1>
+                    <hr class="w-25">
+                    <!--retrive data-->                 
+			                <div class="btnalnctr">
+                                <button type="submit" class="btn btn-secondary p-3" ng-click="retrieve_data();" >Show Data to Delete</button><br><br>
+                            </div>
+                        
+                        <br><br>
+                    
+                    
+                    <!--delete data-->
+                        <table align="center" class="table text-center table-hover"  border="">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>FIRST NAME</th>
+                                    <th>LAST NAME</th>
+                                    <th>PHONE NO </th>
+                                    <th>OPERATION</th>
+                                </tr>
+                            </thead>
+                           <tbody>
+                            <tr ng-repeat="data in receive_data"> 
+                                <td>{{data.first_name}}</td>
+                                <td>{{data.last_name}}</td>
+                                <td>{{data.phone}}</td>
+                                <td align='center'><button ng-click="delete_data(data._id)">Delete</button></td>
+                             </tr>
+                           </tbody>
+                            
+                        </table  >	
+                  
+                  </div>
+            </center>
+
+        </body>
+
+    </html>

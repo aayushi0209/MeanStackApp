@@ -1,0 +1,33 @@
+<!--//spamean/views/show.html-->
+
+<!DOCTYPE html>
+<html>  
+    <head>
+    </head>
+    <body>
+        
+	        <div class ="container  text-center my-5">
+                    <h1>SHOW DATA</h1>
+                    <hr class="w-25">
+                <input type="submit"class="btn btn-secondary p-3 my-2 " ng-click="retrieve_data()" value="SHOW"><br><br>
+    	        <table class="table text-center table-hover ">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">FIRST NAME   </th>
+                            <th  scope="col">LAST NAME   </th>
+                            <th  scope="col">PHONE NO    </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="data in recieve_data"> 
+                            <td>{{data.first_name}}</td>
+                            <td>{{data.last_name}}</td>
+                            <td>{{data.phone}}</td>
+                         </tr>
+                    </tbody>
+                   
+                 </table>		
+              </div>
+       
+    </body>
+</html>

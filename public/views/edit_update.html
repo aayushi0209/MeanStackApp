@@ -1,0 +1,42 @@
+<!--//spamean/views/edit_update.html-->
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		
+	<center>
+		<div class ="container  text-center my-5">
+				<h1>UPDATE DATA</h1>
+				<hr class="w-25">
+			<!--retrive data-->                 
+			<div class="btnalnctr">
+				<button type="submit" ng-click="retrieve_data();" >Update Data</button><br><br>
+			</div>
+			<br><br>
+	
+		 	<!--update data-->
+		 	<table align="center" class="table text-center table-hover" ng-init="retrieve_data_ind()">
+				<thead class="thead-dark">
+					<tr>
+
+						<th>FIRST NAME</th>
+						<th>LAST NAME</th>
+						<th>PHONE NO </th>
+						<th>OPERATION</th>
+					</tr>
+				</thead>
+				<tbody>
+				<tr ng-repeat="data in receive_data_ind"> 
+					<td><input ng-model="data.first_name"></td>
+					<td><input ng-model="data.last_name"></td>
+					<td><input ng-model="data.phone"></td>
+					<td align='center'><button ng-click="update_data(data._id)">Update</button></td>
+				 </tr>
+				 </tbody>
+			</table  >	
+		</div>
+	</center>
+	</body>
+</html>
